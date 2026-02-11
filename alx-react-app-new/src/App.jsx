@@ -17,7 +17,7 @@ function App() {
       <Header />
       <UserProfile
         name="Osho Emmanuel"
-        age="45"
+        age="75"
         bio="Loves hiking and photography."
       />
       <MainContent />
