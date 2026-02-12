@@ -43,16 +43,12 @@ function App() {
       </p>
       <UserContext.Provider value={userData}>
         <ProfilePage/>
+        <userProfile/>
      </UserContext.Provider>
       <WelcomeMessage />
       <Header />
       <MainContent />
       <Footer />
-      <UserProfile
-        name="Alice"
-        age="25"
-        bio="Loves hiking and photography."
-      />
     </>
   )
 }
