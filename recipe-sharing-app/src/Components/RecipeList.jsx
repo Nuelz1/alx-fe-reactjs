@@ -1,4 +1,4 @@
-import {useRecipeStore}  from '../Store/recipeStore';
+import useRecipeStore  from '../store/recipeStore';
 
 const RecipeList = () => {
   const recipes = useRecipeStore((state) => state.recipes);
@@ -12,7 +12,7 @@ const RecipeList = () => {
         {recipes.map(recipe => (
             <div key={recipe.id}>
                 <h2>{recipe.title}</h2>
-                <h1>{recipe.description}</h1>
+                <p>{recipe.description}</p>
             </div>
         ))}
     </div>

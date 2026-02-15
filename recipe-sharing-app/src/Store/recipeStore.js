@@ -22,6 +22,12 @@ const useRecipeStore = create((set, get) => ({
 
     set({ recipes });
   },
+
+  searchTerm: "",
+  setSearchTerm: (term) => {set({ searchTerm: term });
+  filtere
+  },
+
 }));
 
 export default useRecipeStore;
