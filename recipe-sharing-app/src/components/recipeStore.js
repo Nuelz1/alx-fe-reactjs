@@ -4,7 +4,7 @@ const useRecipeStore = create((set, get) => ({
   recipes: [],
 
   addRecipe: (newRecipe) => {
-    if (!newRecipe || !newRecipe.title) {
+    if (!newRecipe || !newRecipe.title.trim()) {
       console.error("Invalid recipe");
       return;
     }
@@ -12,6 +12,27 @@ const useRecipeStore = create((set, get) => ({
     set((state) => ({
       recipes: [...state.recipes, newRecipe],
     }));
+  },
+
+  deleteRecipe: (id) => {
+    set((state) => ({
+      recipes: state.recipes.filter((recipe) => recipe.id !== id),
+    }));
+  },
+
+  updateRecipe: (updatedRecipe) => {
+    if (!updatedRecipe || !updatedRecipe.id) {
+      console.error("Invalid recipe");
+      return;
+    }
+
+    set((state) => ({
+      recipes: state.recipes.map((recipe) =>
+        recipe.id === updatedRecipe.id
+          ? { ...recipe, ...updatedRecipe }
+          : recipe
+      )
+    })); 
   },
 
   setRecipes: (recipes) => {
