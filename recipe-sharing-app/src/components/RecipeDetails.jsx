@@ -24,6 +24,8 @@ const RecipeDetails = () => {
                 Edit Recipe
             </button>
 
+            <DeleteRecipeButton id={recipe.id} />
+
         </div>
     );
 };
