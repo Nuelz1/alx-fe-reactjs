@@ -19,9 +19,9 @@ const RecipeList = () => {
   return (
     <div>
       {displayList.map((recipe) => (
-        <div key={recipe.id} style={{ border: '1px solid #ddd', padding: '10px', margin: '10px' }}>
+        <div key={recipe.id} style={{ backgroundColor: '#13a32b', border: '1px solid #b2bd1b', margin: '10px' }}>
           <Link to={`/recipes/${recipe.id}`}>
-            <h3>{recipe.title}</h3>
+            <h3 style = {{ color: '#cecde2' }}>{recipe.title}</h3>
           </Link>
           <p>{recipe.description}</p>
         </div>
