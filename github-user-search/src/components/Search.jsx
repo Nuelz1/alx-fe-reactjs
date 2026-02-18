@@ -13,7 +13,7 @@ const Search = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
-  const fetchData = async (pageNumber) => {
+  const fetchUserData = async (pageNumber) => {
     setLoading(true);
     setError(false);
     try {
@@ -36,13 +36,13 @@ const Search = () => {
     e.preventDefault();
     setUsers([]);
     setPage(1);
-    fetchData(1);
+    fetchUserData(1);
   };
 
   const handleLoadMore = () => {
     const nextPage = page + 1;
     setPage(nextPage);
-    fetchData(nextPage);
+    fetchUserData(nextPage);
   };
 
   return (
