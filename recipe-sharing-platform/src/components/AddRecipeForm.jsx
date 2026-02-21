@@ -4,7 +4,7 @@ const AddRecipeForm = () => {
   const [title, setTitle] = useState("");
   const [ingredients, setIngredients] = useState("");
   const [steps, setSteps] = useState("");
-  const [error, setError] = useState(null);
+  const [errors, setErrors] = useState(null);
 
   const validateForm = () => {
     if (!title.trim() || !ingredients.trim() || !steps.trim()) {
@@ -29,14 +29,14 @@ const AddRecipeForm = () => {
     const validationError = validateForm();
 
     if (validationError) {
-      setError(validationError);
+      setErrors(validationError);
       return;
     }
 
     // Clear errors
-    setError(null);
+    setErrors(null);
 
-    console.log({title, ingredients, instructions});
+    console.log({title, ingredients, steps});
 
     const newRecipe = {
       title: title.trim(),
@@ -44,7 +44,7 @@ const AddRecipeForm = () => {
         .split(",")
         .map((item) => item.trim())
         .filter((item) => item !== ""),
-      instructions: instructions.trim(),
+      steps: steps.trim(),
     };
 
     console.log(newRecipe);
@@ -52,7 +52,7 @@ const AddRecipeForm = () => {
     // Reset form
     setTitle("");
     setIngredients("");
-    setInstructions("");
+    setSteps("");
   };
 
   return (
