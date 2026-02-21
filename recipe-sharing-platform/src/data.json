@@ -3,12 +3,97 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://via.placeholder.com/150"
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "200g spaghetti",
+      "100g bacon or pancetta",
+      "2 large eggs",
+      "1/2 cup grated Parmesan cheese",
+      "2 cloves garlic",
+      "Salt to taste",
+      "Black pepper to taste"
+    ],
+    "instructions": [
+      "Cook spaghetti in salted boiling water until al dente.",
+      "Fry bacon in a pan until crispy, then add minced garlic and cook briefly.",
+      "In a bowl, whisk eggs and Parmesan cheese together.",
+      "Drain pasta and add it to the pan with bacon (remove from heat).",
+      "Quickly stir in the egg mixture until creamy.",
+      "Season with salt and black pepper, then serve immediately."
+    ]
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
-    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://via.placeholder.com/150"
+    "summary": "Chunks of grilled chicken cooked in a smooth buttery and creamy tomato-based gravy.",
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "500g chicken breast",
+      "1 cup yogurt",
+      "2 tbsp tikka masala paste",
+      "1 onion, chopped",
+      "2 cloves garlic",
+      "1 cup tomato puree",
+      "1/2 cup heavy cream",
+      "Salt to taste",
+      "Oil for cooking"
+    ],
+    "instructions": [
+      "Marinate chicken with yogurt and tikka masala paste for at least 1 hour.",
+      "Grill or pan-fry chicken until cooked through.",
+      "In a pan, sauté onions and garlic in oil until soft.",
+      "Add tomato puree and simmer for 10 minutes.",
+      "Stir in cream and cooked chicken.",
+      "Simmer for another 10 minutes, season with salt, and serve."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Jollof Rice",
+    "summary": "A West African one-pot rice dish cooked in a rich tomato and pepper sauce with spices.",
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "2 cups long-grain rice",
+      "3 tomatoes",
+      "1 red bell pepper",
+      "1 onion",
+      "2 tbsp tomato paste",
+      "2 cups chicken stock",
+      "1 tsp thyme",
+      "1 tsp curry powder",
+      "Salt to taste",
+      "Oil for cooking"
+    ],
+    "instructions": [
+      "Blend tomatoes, bell pepper, and half the onion until smooth.",
+      "Heat oil in a pot and sauté remaining chopped onion.",
+      "Add tomato paste and fry for 2 minutes.",
+      "Pour in blended mixture and cook until reduced.",
+      "Add stock, thyme, curry powder, and salt.",
+      "Stir in washed rice, cover, and cook on low heat until tender."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Pancakes",
+    "summary": "Fluffy golden pancakes served with maple syrup and fresh berries.",
+    "image": "https://via.placeholder.com/150",
+    "ingredients": [
+      "1 cup flour",
+      "1 tbsp sugar",
+      "1 tsp baking powder",
+      "1 cup milk",
+      "1 egg",
+      "2 tbsp melted butter",
+      "Pinch of salt"
+    ],
+    "instructions": [
+      "Mix flour, sugar, baking powder, and salt in a bowl.",
+      "In another bowl, whisk milk, egg, and melted butter.",
+      "Combine wet and dry ingredients until smooth.",
+      "Heat a lightly greased pan over medium heat.",
+      "Pour batter and cook until bubbles form, then flip.",
+      "Cook until golden brown and serve."
+    ]
   }
 ]
