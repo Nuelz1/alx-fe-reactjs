@@ -33,6 +33,16 @@ const HomePage = () => {
           </div>
         ))}
       </div>
+
+      <div className="flex justify-between items-start mb-8 p-5 bg-blue-50 rounded-lg shadow-lg mt-10">
+        <h1 className="text-3xl font-bold">Your Own Recipe?</h1>
+        <Link 
+             to="/add-recipe" 
+            className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
+        >
+            + Add New Recipe
+  </Link>
+</div>
     </div>
   );
 };
