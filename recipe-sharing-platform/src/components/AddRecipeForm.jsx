@@ -3,11 +3,11 @@ import { useState } from "react";
 const AddRecipeForm = () => {
   const [title, setTitle] = useState("");
   const [ingredients, setIngredients] = useState("");
-  const [instructions, setInstructions] = useState("");
+  const [steps, setSteps] = useState("");
   const [error, setError] = useState(null);
 
   const validateForm = () => {
-    if (!title.trim() || !ingredients.trim() || !instructions.trim()) {
+    if (!title.trim() || !ingredients.trim() || !steps.trim()) {
       return "All fields are required.";
     }
 
